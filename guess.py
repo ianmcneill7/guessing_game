@@ -8,14 +8,13 @@ def rng_tool(): # RNG tool to get a number between 0 and 100
 
 print("Welcome to the Guessing Game of DOOM! Enjoy the cookies!")
 
-x = input("Enter a Number between 0, and 100: ")
-
 correct_number = rng_tool()
 
 running = True
 
 # Game Loop Start
 while running:
+	x = input("Enter a Number between 0, and 100: ")
 	if int(x) > correct_number:
 		print("Too high, guess again.")
 		
@@ -25,8 +24,8 @@ while running:
 		print("Congrats, you win... this time. \n")
 		play = input("Play again?: (Y/N) ")
 		play.lower()
-		if play == 'y' or 1:
-		int(x) != correct_number
-	else:
-		play == 'n' or 2
-		
+		if play == 'y':
+			correct_number = rng_tool()
+		elif play == 'n':
+			print("'Til next time.")
+			break

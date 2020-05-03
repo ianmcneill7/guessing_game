@@ -13,19 +13,19 @@ x = input("Enter a Number between 0, and 100: ")
 correct_number = rng_tool()
 
 running = True
-# Game Loop Start
 
+# Game Loop Start
 while running:
 	if int(x) > correct_number:
-			print("Too high, guess again.")
+		print("Too high, guess again.")
 		
 	elif int(x) < correct_number:
-			print("Too low, guess again.")
-else:
-	print("Congrats, you win... this time. \n")
-	play = input("Play again?: (Y/N) ")
-	play.lower()
-	if play == 'y' or 1:
+		print("Too low, guess again.")
+	else:
+		print("Congrats, you win... this time. \n")
+		play = input("Play again?: (Y/N) ")
+		play.lower()
+		if play == 'y' or 1:
 		int(x) != correct_number
 	else:
 		play == 'n' or 2
